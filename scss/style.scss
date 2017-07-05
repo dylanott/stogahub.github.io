@@ -1,0 +1,876 @@
+$blue: #4584EE;
+$blue2: lighten($blue, 4%);
+$gray: #D7D7D7;
+$gray2: #F5F5F5;
+$white: #FEFEFE;
+$boxshadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 2px 8px hsla(0, 0%, 0%, 0.2);
+$background: $gray2;
+$search-background: white;
+$fontfamily: 'Roboto', sans-serif;
+$label-color: #aaa;
+$label-size: 16px;
+$label-shadow: 0 0 2px rgba(225,225,225,0.0);
+
+$_500px:#0099E5;$ACM:#0085CA;$AboutMe:#044A75;$Air:#FF2D55;$Airbnb:#FF5A5F;$Amazon:#FF9900;$AmericanExpress:#2E77BC;$Android:#A4C639;$Appnet:#3A393C;$Apple:#999999;$Asana:#273347;$Automatic:#7D8084;$Baidu:#2319DC;$Bandcamp:#408294;$Basecamp:#66CC66;$Bathasu:#00A3E0;$Bebo:#DE484A;$Behance:#1769FF;$Bigcartel:#222222;$Bing:#008373;$Bitbucket:#205081;$Bitcoin:#F7931A;$Bitly:#EE6123;$Blogger:#F38936;$Bootstrap:#563D7C;$Brandai:#0AA0FF;$Buffer:#323B43;$Buzzfeed:#EE3322;$Csswizardry:#F43059;$Cakephp:#D33C43;$Campaignmonitor:#19A9E5;$Circleci:#343434;$Coop:#00A1CC;$CodeSchool:#4CADC0;$CodeIgniter:#EE4623;$Codepen:#000000;$CodeCademy:#204056;$CodeForces:#1F8ACB;$CoderWall:#3E8DCC;$Codio:#4574E0;$Compropago:#00AAEF;$Conekta:#414959;$Coursera:#757575;$Dailymotion:#0066DC;$Deezer:#00C7F2;$Delicious:#3399FF;$DesignerNews:#2D72D9;$DeviantArt:#05CC47;$Diaspora:#000000;$Digg:#000000;$DigitalOcean:#0080FF;$Discord:#7289DA;$Discover:#FF6000;$Disqus:#2E9FFF;$Docker:#1488C6;$DraugieMLV:#FF6600;$Dribbble:#EA4C89;$Dropbox:#007EE5;$Drupal:#0678BE;$Ello:#000000;$Empirekred:#72BE50;$Ethereum:#3C3C3D;$Etsy:#F45800;$EventStore:#5AB552;$Eventbrite:#F6682F;$Evernote:#2DBE60;$Everplaces:#FA4B32;$Facebook:#3B5998;$Feedly:#6CC655;$FitBit:#00B0B9;$Flickr:#0063DC;$Flipboard:#E12828;$Foursquare:#F94877;$Govuk:#005EA5;$Garmin:#007CC3;$Gauges:#339966;$Geeklist:#8CC63F;$Geocaching:#467126;$Ghost:#718087;$Git:#F14E32;$GitHub:#181717;$Gitlab:#E24329;$Gitter:#FF0064;$Glassdoor:#7CB228;$Gmail:#D14836;$Goldenline:#FBBF00;$Goodreads:#663300;$Google:#4285F4;$GoogleAnalytics:#FFC107;$GoogleDrive:#4386FC;$GoogleHangouts:#0C9D58;$GooglePlay:#607D8B;$GooglePlayMusic:#FF5722;$GooglePlus:#DC4E41;$GratiPay:#663300;$Grav:#221E1F;$Gravatar:#1E8CBE;$Gulp:#DA4648;$Gumtree:#72EF36;$Html5:#E34F26;$Hackerrank:#2EC866;$Hackster:#1BACF7;$Hatenabookmark:#00A4DE;$Heroku:#430098;$Hipchat:#205281;$Hootsuite:#000000;$Houzz:#7AC142;$Hulu:#66AA33;$IMDB:#E6B91E;$Invision:#FF3366;$Instacart:#43B02A;$Instagram:#E4405F;$Instapaper:#1F1F1F;$Intercom:#1F8DED;$jsFiddle:#4679A4;$Json:#000000;$JavaScript:#F7DF1E;$Jekyll:#CC0000;$Jenkins:#D24939;$Joomla:#5091CD;$Justgiving:#AD29B6;$Kaggle:#20BEFF;$KhanAcademy:#9DB63B;$Kickstarter:#2BDE73;$Kik:#82BC23;$Kirby:#FF0100;$Klout:#E44600;$Koding:#00B057;$Lanyrd:#3C80CA;$Laravel:#E74430;$Lastfm:#D51007;$Launchpad:#F8C300;$Line:#00C300;$LinkedIn:#0077B5;$LinuxFoundation:#009BEE;$LiveJournal:#00B0EA;$Livestream:#CF202E;$Macys:#E11A2B;$Magento:#EE672F;$Mailchimp:#2C9AB7;$Makerbot:#FF1E0D;$Mastercard:#EB001B;$Matternet:#261C29;$Mediatemple:#000000;$Medium:#00AB6B;$Meetup:#E2373C;$Messenger:#0084FF;$Microgenetics:#FF0000;$Microsoft:#666666;$MicrosoftAccess:#BA141A;$MicrosoftExcel:#217346;$MicrosoftOnenote:#80397B;$MicrosoftOutlook:#0072C6;$MicrosoftPowerpoint:#D24726;$MicrosoftWord:#2B579A;$Minecraft:#62B74A;$MinuteMailer:#3ABFE6;$Mixcloud:#314359;$Monero:#FF6600;$Monkeytie:#FFC619;$Monogram:#FDB22A;$Moo:#00945E;$Myspace:#030303;$Netflix:#E50914;$Nintendo:#8F8F8F;$NintendoSwitch:#E60012;$Ovh:#123F6D;$Oculus:#1C1E20;$OdnoklasSniki:#F4731C;$Onedrive:#094AB2;$Opera:#FF1B2D;$Origin:#F56C2D;$Overcast:#FC7E0F;$Patreon:#E6461A;$PayPal:#00457C;$Periscope:#40A4C4;$Pinboard:#0000FF;$Pingdom:#FFF000;$Pingup:#00B1AB;$Pinterest:#BD081C;$Plangrid:#0085DE;$Playstation:#000000;$PlayerMe:#C0379A;$Pocket:#EF3F56;$Podcasts:#9933CC;$ProductHunt:#DA552F;$Protoio:#34A7C1;$Quantopian:#C50000;$Quora:#B92B27;$RSS:#FFA500;$Raspberrypi:#C7053D;$Rdio:#008FD5;$React:#00D8FF;$ReadTheDocs:#8CA1AF;$Readability:#990000;$Reddit:#FF4500;$ReverbNation:#E43526;$Ruby:#CC342D;$Runkeeper:#2DC9D7;$SASS:#CC6699;$SauceLabs:#EC4047;$Scribd:#1A7BBA;$Sega:#0089CF;$Sellfy:#21B352;$Sentiayoga:#4CAF50;$Sentry:#FB4226;$Serverfault:#E7282D;$Shopify:#7AB55C;$Simpleicons:#111111;$Sinaweibo:#E6162D;$Sitepoint:#258AAF;$Skyliner:#2FCEA0;$Skype:#00AFF0;$Slack:#56B68B;$Slashdot:#026664;$Slides:#E4637C;$SmashingMagazine:#E85C33;$Snapchat:#FFFC00;$SongKick:#F80046;$SoundCloud:#FF3300;$SpeakerDeck:#339966;$Spotify:#1ED760;$Spotlight:#352A71;$Spreaker:#F5C300;$Squarespace:#000000;$StackExchange:#1E5397;$StackOverflow:#FE7A16;$Statamic:#1F3641;$Steam:#000000;$Steem:#4BA2F2;$Stitcher:#000000;$Storify:#3A98D9;$Stripe:#008CDD;$Stubhub:#003168;$StumbleUpon:#EB4924;$StyleShare:#231F20;$Subversion:#809CC9;$SuperUser:#2EACE3;$Swarm:#FBB631;$Ted:#E62B1E;$Teespring:#39ACE6;$Telegram:#2CA5E0;$Tesla:#CC0000;$Tinder:#FF6B6B;$Toggl:#C5000B;$TopCoder:#29A8E0;$Toptal:#3863A0;$Trakt:#ED1C24;$TravisCI:#39A85B;$Treehouse:#5FCF80;$Trello:#0079BF;$Tripadvisor:#589442;$Trulia:#53B50A;$Tumblr:#36465D;$Twilio:#E12127;$Twitch:#6441A5;$Twitter:#1DA1F2;$Twoo:#FF7102;$Uber:#000000;$Ubuntu:#DD4814;$Udacity:#01B3E3;$Vk:#6383A8;$Viadeo:#F88D2D;$Viber:#7C529E;$Vimeo:#1AB7EA;$Vine:#11B48A;$Virb:#0093DA;$Visa:#142787;$Vuejs:#4FC08D;$WeChat:#7BB32E;$WhatsApp:#25D366;$Wikipedia:#000000;$Windows:#0078D6;$Wire:#000000;$Wix:#FFC233;$WordPress:#21759B;$Xbox:#107C10;$Xero:#13B5EA;$Xing:#005A5F;$Ycombinator:#F0652F;$Yahoo:#440099;$Yammer:#0072C6;$Yelp:#C41200;$YouTube:#CD201F;$Zapier:#FF4A00;$ZenDesk:#03363D;$Zerply:#9DBC7A;$Zillow:#0074E4;$Ebay:#E53238;$FreeCodeCamp:#006600;$iFixIt:#0071CE;
+
+body {
+  padding-top: 48px;
+  font-family: "Roboto", sans-serif;
+  background-color: #F5F5F5; }
+
+#search {
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.2);
+	border-color: transparent;
+	margin-bottom: 2rem;
+	background-color: transparent;
+	.card-block {
+		padding: 1rem;
+		background: white;
+		height: 70px;
+		.google__logo {
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAAoCAMAAAAlmk//AAAAflBMVEUAAAA0qFNChfRChfRChfRChfRChfTsUDFChfRChfTqQzXqQzVChfTqQzXqQzXqQzVChfTqQzX7vAXqQzVChfT7vAX7vAX7vAXqQzX7vAX7vAVChfTqQzVChfTqQzX7vAXqQzX7vAXqQzX7vAXqQzU0qFNChfTqQzX7vAU0qFPmKNI6AAAAJnRSTlMAv78ef0XwF5zPYO9gQpm/b97wf9+dZtrPvkczM65vJa5/UTMlOmbv7OIAAALNSURBVFjD7ZbbcqMwDIZVwGDOISEkIZDzkvT9X3Aty1hO2exeZNiZzvS/gbq2P/+SLAI/el9CxoOSJ/fwnn4pwUtl9WDlvYf6+Pz8gBfytRnWYibQviYnQRBIQmazgPwQ9w5881c/DHIeR2gidPKSyXlylCHHB1dzgChwAuYEsSEP/gNI/t3Q4VTdq9Mh4pFmvXksd+eje9froZYCVNUKF5Sc0ntV5EAKVYZeYi7VnZQmQLpuHqTleYy9N94+rF0GdePagk75FDmPleGR7qyEOMuH1Zo43FOeQHlql26nIF6BgznOKpM8KfHlov5/RM6mads1ks72ckgh5DMoSmntBdeu/gHCOQcAY61Sz7U10irk8ki1FPtjVTFohTEDFO5yo73rSehCBHVqxglIhbYUoZ+xJtR7owzxJQxcUGoi1hUpWjLWJ9dVxV3qQ3VAuukDtrQ5SVnagT9ww/IdUEdZpaDfSww71cooXrLQLuwQToezArXjyA7dCbcDxwzKEbRKdcEWN9p00oEILqD8I+jogB4aJGzgXZDRNoncG9tPulJN+bSzdL4a19EGQyfceIQTUJF/bXbSHYjp25fY20PvB7jqoiMd6T3kohVOjiKMmdtPbF16Nnr7WFcsXYWU5kYV1Si2hauJHLmTnKTYrbqTWmDsFEXEKUFTmdpcZP1gkkaxq3B2vsUwmJpeNugHOTuT4iEYOxGDcm0J67XATdgTiz+D0faOqLLSWY3A3FjVUjf6cbWnDL34awsqdMWVW/3obLg8pnAYkUQiDpFIxCGSkRs6IqGIwxL96KYXwEoqmrqyeW03pqXaEUGn7PXtYxDk5fNaZokgEIbC6pLVoQNXx+bctM/3IQtUgv3Jl+12WSU5Y96V75T3HuaSH9S1IfX4CZ1B3LKlPxaFhDnEbSQMFoGubx/m0z4crDKYUfzjJBQws4T0Yq9f+PCjb63fxmmAhQtfgbgAAAAASUVORK5CYII=) no-repeat 5px 3px;
+			width: 130px;
+			height: 40px;
+			display: inline-block;
+		}
+		@media screen and (max-width: 530px) {
+			padding: 10px;
+			height: 60px;
+			.google__logo {
+				background-position: 0 3px;
+				margin-left: -20px;
+				-webkit-transform: scale(0.6);
+				   -moz-transform: scale(0.6);
+				    -ms-transform: scale(0.6);
+				     -o-transform: scale(0.6);
+				        transform: scale(0.6); }
+			a {
+				max-width: 80px; }
+			#GoogleSearch input {
+				width: 180px !important; }}
+		@media screen and (max-width: 255px) {
+			.google__logo {
+				display: none; }}
+		form {
+			display: inline;
+			margin: 0; 
+			#GoogleSearch {
+				input {
+					height: 38px;
+					width: 475px;
+					line-height: 44px;
+					border: 1px solid #D7D7D7;
+					border-radius: 2px;
+					box-shadow: none;
+					font: 16px arial,sans-serif;
+					background-repeat: no-repeat;
+					background-size: 24px 24px;
+					padding-left: 10px;
+					&:hover {
+						border: 1px solid #b1b1b1; }
+					&:focus {
+						border: 1px solid #4584EE; }}
+				@media screen and (max-width: 750px) {
+					input {
+						width: 400px; }}
+				@media screen and (max-width: 659px) {
+					input {
+						width: 280px; }}
+				@media screen and (max-width: 340px) {
+					input {
+						width: 245px; }
+					button {
+						display: none; }}
+		@media screen and (max-width: 255px) {
+			.google__logo {
+				display: none; }
+			#GoogleSearch input {
+				width: 164px !important; }}
+				button {
+					color: white;
+					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABGUlEQVQoFXWSsU4CQRCGOYwJgeY64gsY3oOSUBMfwwegMCZQmthQ2NJR0FDT2NlQU9jYWICERCUKyPr9ZIcct7eTfJnZf/6ZvctdqeTDOdeEOexBsYUXuDZPYcZwBxYrilf48sIfuRMb1I0K3dTKmjh34QB6mnq2d6wR9aiKdtBEQH86dp0bB30a2voRNLxArwq6fZH3lBEuYJ1v2DlJkg31HqqmWdbwDsL38Q5uVO8SPr10ShqeQQ1T96SeFyN/nJ7LnBhqgD6H3msAFZnIV/AMCn2JNBj2xhua9nNoicwWvxQTWEIvtqCeMX1Tv8MQUngDi0HhgpjI1K1N+vwY8xbqDPVzCx4KjTGR4V5mwSHmi+oM34O+zs8/o2lHs8MgV+EAAAAASUVORK5CYII=) no-repeat 50% 50% #4584EE;
+					border-color: #4584EE;
+					border-radius: 0 2px 2px 0;
+					width: 60px;
+					cursor: pointer;
+					&:hover {
+						background-color: #5890f0; }
+				}
+			}
+		}
+	}
+}
+
+
+
+/* Menu */
+
+.menu-wrapper {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+	@media screen and (max-width: 900px) {
+		top: -8px;
+		right: -8px;
+		width: 40px;
+		height: 40px;
+	}
+  &:hover .menu {
+    width: 200px;
+    height: 275px;
+    border-radius: 3px;
+    img {
+      opacity: 0;
+      transition: all 0.05s ease-in; }
+    ul {
+      display: block;
+      list-style-type: none;
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+      padding: 0;
+      font-size: 22px;
+      li {
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        width: 180px;
+        margin: 0 auto;
+        a {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          text-decoration: none;
+          display: block;
+          width: 180px;
+          color: #fff;
+          padding: 7px 0;
+          margin: 5px 0;
+          border-radius: 4px;
+          -webkit-transition: all 0.1s ease-in;
+          -moz-transition: all 0.1s ease-in;
+          -o-transition: all 0.1s ease-in;
+          transition: all 0.1s ease-in;
+          &:hover {
+            color: #4285F4;
+            background-color: white; }
+          &:focus, &:active {
+            background-color: #4285F4; 
+					}
+				}
+			}
+		}
+	}
+  .menu {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    background-color: #4285F4;
+    box-shadow: 1px 1px 10px 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+		z-index: 3;
+    box-shadow: 0 2px 2.5px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    ul {
+      display: none;
+		}
+		@media screen and (max-width: 900px) {
+			top: -5px;
+			right: -5px;
+			width: 40px;
+			height: 40px;
+			border-radius: 5px;
+			img {
+				width: 25px;
+				height: 43px;
+				margin-left: -3px;
+			}
+		}
+	}
+}
+
+
+/* Sites */
+
+.sites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  .hidden {
+    display: none; }
+  a {
+    font-size: 1.3rem;
+    background: #111;
+    border-radius: 4px;
+    width: 188px;
+    height: 120px;
+    margin: 1rem;
+    line-height: 120px;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    color: #4584EE;
+    box-sizing: border-box;
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    span {
+      &:nth-child(1) {
+        font-family: FontAwesome;
+        padding-right: 0;
+        font-size: 55px; }
+      &:nth-child(2) {
+        opacity: 0;
+        position: absolute;
+        font-size: 16px;
+        font-family: sans-serif;
+        -webkit-transition: all ease-in-out .15s;
+        transition: all ease-in-out .15s;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        color: #aaa;
+        font-weight: 500;
+        width: 188px;
+        text-align: center;
+        text-shadow: 0 0 2px rgba(225, 225, 225, 0); }}
+    &:hover span:nth-child(2) {
+      opacity: 1; }
+    img {
+      width: 55px; }
+    &:nth-child(3n) {
+      page-break-after: always; }
+    &:before {
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.15) 0%, transparent 80%);
+      background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 80%);
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 80%);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform, opacity;
+      -webkit-transition-property: opacity, -webkit-transform;
+      transition-property: opacity, -webkit-transform;
+      transition-property: transform, opacity;
+      transition-property: transform, opacity, -webkit-transform; }
+    &:hover, &:focus, &:active {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      text-decoration: none;
+      color: #4584EE; }
+    &:hover:before, &:focus:before, &:active:before {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// Site customizations
+// Font awesome unicode: 
+// http://fontawesome.io/cheatsheet/
+
+#Google {
+	background: $blue; // remove to make background: $default-background
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1a0';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Facebook {
+	background: #3B5999;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f230';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#YouTube {
+	background: #E62117;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f167';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#GitHub {
+	background: #111;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f09b';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Wikipedia {
+	background: white;
+	color: black;
+	span:nth-child(1):after {
+		content: '\f266';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Reddit {
+	background: #F4400B;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f281';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Instagram { // from http://codepen.io/katydecorah/pen/PNLePj
+	color: white;
+	background:
+   radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+   radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+   radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+   radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+   radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+   radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+   radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+   linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	span:nth-child(1):after {
+		content: '\f16d';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Imgur {
+	background: #2B2B2B;
+	color: #1BB76E;
+	span:nth-child(1):after {
+		content: '\f111';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Amazon {
+	background: #0B0C07;
+	color: #F99A05;
+	span:nth-child(1):after {
+		content: '\f270';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#ProductHunt {
+	background: #DA552F;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f288';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Codepen {
+	background: black;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1cb';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#jsFiddle {
+	background: #3FA1F5;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1cc';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Codepad {
+	background: #F35E5C;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+		background: url('https://codepad.co/img/loader-logo.svg') no-repeat;
+		filter: invert(1) brightness(2);
+		width: 50px;
+		height: 50px;
+		top: 45px;
+		right: 68px;
+		position: absolute;
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Apple {
+	background: #050505;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f179';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Behance {
+	background: #1769FF;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1b5';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Dribbble {
+	background: #E84C88;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f17d';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#ChromeStore {
+	// background-image: repeating-linear-gradient(
+	// 	to bottom right,
+	// 		rgb(251, 188, 5) 0%,
+	// 		rgb(234, 67, 53) 100%
+	// );
+	background: #34A853;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f268';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Dribbble {
+	background: #E84C88;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f17d';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Dropbox {
+	background: #007EE5;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f16b';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Flickr {
+	background: #0063DC;
+	//background: #ff0084;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f16e';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#FirefoxAddons {
+	background: #C13832;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f269';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Medium {
+	background: #00AB6C;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f23a';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Pinterest {
+	background: #BD081C;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f0d2';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Snapchat {
+	background: #FFFC00;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f2ab';
+		text-shadow: 0 0 1px #000;
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Spotify {
+	background: #2EBD59;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1bc';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Slack {
+	background: #6ECADC;
+	//background: #3EB991;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f198';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Twitch {
+	background: #6441A5;
+	//background: #3EB991;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f1e8';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Quora {
+	background: #A82400;
+	//background: #3EB991;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f2c4';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#Inbox {
+	//background: #2B47AE;
+	background: #4285F4;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f2b6';
+		visibility: hidden;
+	}
+}
+
+#Messenger {
+	background: #0084FF;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f075';
+		visibility: hidden;
+	}
+}
+
+#Twitter {
+	background: #1DA1F2;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f099';
+	}
+	img {
+		filter: invert(1);
+	}
+}
+
+#cPanel {
+	background: #f26c31;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f233';
+	}
+}
+
+#Bluehost {
+	background: #3575D3;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f00a';
+	}
+}
+
+#Keep {
+	background: #FFBB00;
+	color: white;
+	span:nth-child(1):after {
+		content: '\f0eb';
+	}
+}
+
+#_500px {
+	background: $_500px;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+	}
+}
+
+#ACM {
+	background: $ACM;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+	}
+}
+
+#AboutMe {
+	background: $AboutMe;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+	}
+}
+
+#Air {
+	background: $Air;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+	}
+}
+
+#Airbnb {
+	background: $Airbnb;
+	color: white;
+	span:nth-child(1):after {
+		content: '';
+	}
+}
+
+// filtered logos
+
+#Pocket {
+	background: $Pocket;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Flipboard {
+	background: $Flipboard;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Opera {
+	background: $Opera;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#RSS {
+	background: $RSS;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Netflix {
+	background: $Netflix;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Hulu {
+	background: $Hulu;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Feedly {
+	background: $Feedly;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#GoogleHangouts {
+	background: $GoogleHangouts;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Vimeo {
+	background: $Vimeo;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#LinkedIn {
+	background: $LinkedIn;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#DesignerNews {
+	background: $DesignerNews;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Bootstrap {
+	background: $Bootstrap;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Heroku {
+	background: $Heroku;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#Instapaper {
+	background: $Instapaper;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#GooglePlay {
+	background: $GooglePlay;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
+
+#GooglePlayMusic {
+	background: $GooglePlayMusic;
+	color: white;
+	img {
+		filter: invert(1);
+	}
+}
