@@ -1,6 +1,6 @@
 # https://rohitbommisetti.github.io/conestogahub/
 > Modern splash given to stoga.net by 2 Conestoga Students for a crowd of 2000 students.
-> ### Team:
+### Team:
 ### Richard Xu - Lead Developer
 An incoming freshman at UPitt, Richard loves to play basketball, listen to country music & take runs to Starbucks with Rohit. 
 Richard's also involved as a co - director of CS4 Mainline, a nonprofit student - run intiative which is developing young, motivated software developers in the mainline. 
