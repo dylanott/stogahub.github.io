@@ -20,15 +20,15 @@ Stoga Hub is the quintessential website for Pioneers at Conestoga High School. W
 Week of July 3, 2017: The team is plotting the UX of the Stoga Hub and designed a wireframe for the dashboard. 
 
 ### Elements
-*Clubs
-*Schedule
-*Spoke
-*Stoga news
-*Closing schedule
-*Map of school
-*Teacher list (https://www.tesd.net/domain/7)
-*Social Media
-*Lunch schedule (food of the day)
-*Spoke.news
-*Play schedule
+* Clubs
+* Schedule
+* Spoke
+* Stoga news
+* Closing schedule
+* Map of school
+* Teacher list (https://www.tesd.net/domain/7)
+* Social Media
+* Lunch schedule (food of the day)
+* Spoke.news
+* Play schedule
 
