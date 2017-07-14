@@ -323,11 +323,11 @@ body {
           filter: invert(1);
 }
 
-#Facebook {
-  background: #3B5999;
+#Schoology {
+  background: #74ebd5;
   color: white;
 }
-#Facebook span:nth-child(1):after {
+#Schoology span:nth-child(1):after {
   content: '\f230';
 }
 #Facebook img {
