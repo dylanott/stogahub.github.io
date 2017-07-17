@@ -660,6 +660,7 @@ body {
 #Inbox {
   background: #4285F4;
   color: white;
+  
 }
 #Inbox span:nth-child(1):after {
   content: '\f2b6';
@@ -667,8 +668,8 @@ body {
 }
 
 #Office365 {
-  background: #f69256;
-  color: white;
+  background-color: #f69256;
+ 
 }
 #Office365 span:nth-child(1):after {
   content: '\f075';
