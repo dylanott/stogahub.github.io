@@ -667,7 +667,7 @@ body {
 }
 
 #Office365 {
-  background: url('images/OfcLogo.jpg');
+  background: #f69256;
   color: white;
 }
 #Office365 span:nth-child(1):after {
