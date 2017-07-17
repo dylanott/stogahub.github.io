@@ -666,11 +666,11 @@ body {
   visibility: hidden;
 }
 
-#Messenger {
+#Office365 {
   background: url('images/OfcLogo.jpg');
   color: white;
 }
-#Messenger span:nth-child(1):after {
+#Office365 span:nth-child(1):after {
   content: '\f075';
   visibility: hidden;
 }
