@@ -662,14 +662,11 @@ body {
 }
 
 #Office365 {
-	background-color: #f69256;
+	background-color: #ff6a80;
 	//color: white;
 	span:nth-child(1):after {
 		content: '\f075';
 		visibility: hidden;
-	}
-	img {
-		filter: invert(1);
 	}
 }
 
