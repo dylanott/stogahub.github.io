@@ -347,7 +347,7 @@ body {
 }
 
 #PeerTutoring {
-  background: #9900ff;
+  background-image: "images/cb4b27c108e19da874208ed7cc017cb9.png";
  }
 #PeerTutoring span:nth-child(1):after {
   content: '\f09b';
