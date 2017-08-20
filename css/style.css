@@ -339,18 +339,11 @@ body {
 }
 
 #Libguide {
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-}
-#Libguide span:nth-child(1):after {
-  content: '\f167';
-}
-#Libguide img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  background-image: #ff3860;
 }
 
 #PeerTutoring {
-  background-color: rgb(35,209,96);
+  background-color: #00d1b2;
  }
 
 #Wikipedia {
