@@ -347,9 +347,8 @@ body {
 }
 
 #GitHub {
-  background: #111;
-  color: white;
-}
+  background: #9900FF;
+ }
 #GitHub span:nth-child(1):after {
   content: '\f09b';
 }
