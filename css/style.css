@@ -669,7 +669,7 @@ body {
 }
 
 #HAC {
- background: #e974c5;  /* fallback for old browsers */
+ background: #ffdd57;  /* fallback for old browsers */
  
 }
 #HAC span:nth-child(1):after {
