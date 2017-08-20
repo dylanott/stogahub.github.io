@@ -346,13 +346,13 @@ body {
           filter: invert(1);
 }
 
-#GitHub {
+#Peer Tutoring {
   background: #9900FF;
  }
-#GitHub span:nth-child(1):after {
+#Peer Tutoring span:nth-child(1):after {
   content: '\f09b';
 }
-#GitHub img {
+#Peer Tutoring img {
   -webkit-filter: invert(1);
           filter: invert(1);
 }
