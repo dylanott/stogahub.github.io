@@ -347,7 +347,7 @@ body {
 }
 
 #Peer Tutoring {
-  background: #9900FF;
+  background-color: #9900ff;
  }
 #Peer Tutoring span:nth-child(1):after {
   content: '\f09b';
@@ -382,7 +382,7 @@ body {
 }
 
 #Naviance {
-   background-color:#DA70D6;
+   background-color #ffaaaa;
 }
 #Naviance span:nth-child(1):after {
   content: '\f16d';
